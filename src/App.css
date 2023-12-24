@@ -1,4 +1,3 @@
-/* Style de base pour la mise en page */
 .App {
   font-family: 'Arial', sans-serif;
   max-width: 600px;
@@ -7,76 +6,53 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
-/* En-tête */
 h1 {
   color: #333;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-/* Style des formulaires */
-form {
-  margin-bottom: 20px;
-}
-
-label {
+.form-row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-/* Personnalisation du checkbox */
-input[type="checkbox"] {
+.checkbox-label {
+  margin-right: 20px; /* Adjust spacing based on your layout */
+}
+
+.slider-label {
+  flex-grow: 1;
+  text-align: center;
+}
+
+input[type=range] {
+  width: 100%;
+  margin-top: 10px; /* Adjust spacing based on your layout */
+}
+
+input[type=checkbox] {
   margin-left: 10px;
 }
 
-/* Personnalisation du slider */
-input[type="range"] {
-  width: 100%;
+label {
+  display: block;
 }
 
-/* Style du sélecteur */
 select {
   width: 100%;
   padding: 8px;
   margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
-/* Style de la boîte d'informations */
-.body-info {
+.info-box {
+  margin-top: 20px;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 4px;
-  min-height: 100px; /* Hauteur minimale pour la cohérence visuelle */
 }
 
-/* Style des médias pour les grands écrans */
-@media (min-width: 1024px) {
-  .App {
-    max-width: 800px;
-  }
-}
-
-/* Style des médias pour les écrans de tablettes */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .App {
-    max-width: 700px;
-  }
-}
-
-/* Style des médias pour les écrans de téléphones mobiles */
-@media (max-width: 767px) {
-  .App {
-    margin: 20px;
-    padding: 10px;
-  }
-
-  .body-info {
-    min-height: 80px;
-  }
-}
